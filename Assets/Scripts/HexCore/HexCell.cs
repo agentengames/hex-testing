@@ -46,5 +46,10 @@ namespace Assets.Scripts.HexCore
         {
             return HexMetrics.GetEdgeType(elevation, neighborCells[(int)direction].elevation);
         }
+
+        public HexEdgeType GetEdgeType(HexCell otherCell)
+        {
+            return HexMetrics.GetEdgeType(elevation, otherCell.elevation);
+        }
     }
 }
