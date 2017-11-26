@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1595192555, guid: 68d0990aa1ff745f5a9088fadb420735, type: 3}
+  m_Name: New NumberFlow Diagram
+  m_EditorClassIdentifier: 
+  nodes: []
+  outputs: []
+  previewOutputIndex: 0
+  functionLibraries: []
+  width: 128
+  height: 128
+  exportWidth: 1024
+  exportHeight: 1024
+  exportAnimationFrames: 0
+  exportAnimateFrom: 0
+  exportAnimateTo: 1
+  tilePreviewHorizontally: 0
+  tilePreviewVertically: 0
+  animatePreview: 0
+  exportAnimation: 0
+  exportAnimationLoop: 0
+  animatePreviewInput: 
+  exportAnimationInput: 

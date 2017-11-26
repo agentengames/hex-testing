@@ -20,8 +20,12 @@ namespace Assets.Scripts.HexCore
 
         public Color defaultColor = Color.white;
 
+        public Texture2D noiseSource;
+
         private void Awake()
         {
+            HexMetrics.noiseSource = noiseSource;
+
             gridCanvas = GetComponentInChildren<Canvas>();
             hexMesh = GetComponentInChildren<HexMesh>();
 
@@ -34,6 +38,11 @@ namespace Assets.Scripts.HexCore
                     SetupCell(x, z, i++);
                 }
             }
+        }
+
+        private void OnEnable()
+        {
+            HexMetrics.noiseSource = noiseSource;
         }
 
         private void Start()
@@ -64,6 +73,8 @@ namespace Assets.Scripts.HexCore
             SetCellNeighbor(x, z, i, cell);
 
             SetCellLabel(position, cell);
+
+            cell.Elevation = 0;
         }
 
         private HexCell CreateNewCell(int x, int z, int i, Vector3 position)
